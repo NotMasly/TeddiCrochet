@@ -1,0 +1,819 @@
+* {
+    box-sizing: border-box;
+    padding: 0; 
+    margin: 0;
+    font-family: "Yuyu Short", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+/* 
+# Es para los Id
+. Es para las Class
+*/
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(Img/Body.jpg);
+    background-repeat: no-repeat;    /* Evita que la imagen se duplique */
+    background-size: cover;          /* Hace que la imagen escale para cubrir todo el espacio */
+    background-position: center;     /* Centra la imagen para que no se vea cortada de forma extraña */
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+#Contenedor {
+    /* Cambiado de 1500px a 95% para que sea fluido */
+    width: 95%;
+    max-width: 1800px; /* Opcional: evita que se vea demasiado estirado en pantallas gigantes */
+    margin: 0 auto;
+    height: fit-content;
+    border-radius: 25px;
+    flex: 1;
+    height: auto;
+}
+
+#Menu {
+    border: 10px solid rgb(0, 0, 0);
+    width: fit-content min-content;
+    padding: 20px;
+    margin: 30px;
+    height: fit-content;
+    border-radius: 10px;
+}
+
+.tituloCatalogo{
+    font-size: 148px;
+}
+
+#Marca {
+    background-color: rgb(255, 192, 203, 0.9);
+    border: 10px outset rgba(214, 123, 207, 0.8);
+    border-top: 40px outset rgba(214, 123, 207, 0.8);
+    padding: 50px;
+    /* Cambiado de 1442px a 100% para que llene el contenedor padre */
+    width: 100%;
+    height: fit-content;
+    border-radius: 10px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.titulosGrandes {
+    font-size: 148px;
+    
+}
+
+#Productos {
+    display: flex;
+    flex-direction: column; /* Apila el título y el div de productos verticalmente */
+    align-items: start;    /* Centra todo horizontalmente */
+    background-image: linear-gradient(rgb(255, 192, 203, 0.8), rgba(213, 138, 219, 0.8));
+    border: 10px outset rgba(214, 123, 207, 0.8);
+    border-top: 40px outset rgba(214, 123, 207, 0.8);
+    width: 100%;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.productoCuadro {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column; /* Ordena la imagen y el texto verticalmente dentro del cuadro */
+    width: fit-content;
+    padding: 10px;
+    align-items: center;
+
+
+}
+
+.contenedorGrilla {
+    display: flex;
+    flex-wrap: wrap;       /* Permite que los productos pasen a la siguiente fila */
+    justify-content: start; /* Centra los productos en la fila */
+    width: 100%;
+}
+
+#contenedorProductos {
+    width: 95%;
+}
+
+.imagenesProductos {
+    height: 250px;
+    border-radius: 20px;
+}
+
+.nombreProducto {
+    margin-top: 10px;
+    font-size: 64px;
+    text-decoration: none;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(36, 36, 36);
+    text-align: center;
+}
+
+.Texto {
+    font-size: 48px;
+}
+
+.botonCuadro {
+
+    background-color: rgb(255, 255, 255, 0);
+    border-radius: 15px;
+}
+
+#Boton1 {
+    display: flex;       
+    flex-direction: row;       
+    padding: 5px;
+    position: absolute;
+    top: 110px;
+    right: 148px;
+}
+
+#Boton2 {
+    display: flex;       
+    flex-direction: row;       
+    padding: 5px;
+    position: absolute;
+    top: 490px;
+    right: 148px;
+}
+#Boton3 {
+    display: flex;       
+    flex-direction: row;       
+    padding: 5px;
+    position: absolute;
+    top: 111px;
+    right: 460px;
+}
+#Boton4 {
+    display: flex;       
+    flex-direction: row;       
+    padding: 5px;
+    position: absolute;
+    top: 405px;
+    right: 340px;
+}
+#Boton5 {
+    display: flex;       
+    flex-direction: row;       
+    padding: 5px;
+    position: absolute;
+    top: 150px;
+    right: 480px;
+}
+#Boton6 {
+    display: flex;       
+    flex-direction: row;       
+    padding: 5px;
+    position: absolute;
+    top: 405px;
+    right: 488px;
+}
+.Win {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 2px;
+    padding: 8px;
+    width: 18px; /* Tamaño del botón */
+    height: 16px;
+    background-color: #c0c0c0; /* Color gris clásico */
+    border: 5px outset;
+    border-color: #ffffff #808080 #808080 #ffffff;
+    
+    /* Centrado del texto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 1;
+}
+
+#Boton1 button:active {
+    border-color: #808080 #ffffff #ffffff #808080;
+}
+
+#Boton2 button:active {
+    border-color: #808080 #ffffff #ffffff #808080;
+}
+
+#Boton3 button:active {
+    border-color: #808080 #ffffff #ffffff #808080;
+}
+
+#Boton4 button:active {
+    border-color: #808080 #ffffff #ffffff #808080;
+}
+#Boton5 button:active {
+    border-color: #808080 #ffffff #ffffff #808080;
+}
+
+
+#contenedorEnunciado {
+    width: 600px;
+}
+
+.Enunciado {
+    font-family: "Press Start 2P", system-ui;
+    font-size: 15px;
+    position: absolute;
+    background: linear-gradient(to right, #cb69d8, #af29e4);
+    padding: 6px;
+    width: 1300px;
+    top: 96px;
+    left: 228px;
+}
+
+#Ditto {
+    position: absolute;
+    width: 75px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.tituloCatalogo {
+    margin: 5px 20px 0px 20px ;
+    font-size: 64px;
+}
+
+#MenuLobby {
+    position: fixed; /* O 'absolute' si prefieres que se mueva con el scroll */
+    top: 62px;       /* Alineado con la parte superior de tu contenedor principal */
+    left: 0px;      /* Distancia desde el borde izquierdo */
+    width: 150px;    /* El ancho que tú prefieras */
+    z-index: 1000;   /* Asegura que el menú siempre esté por encima de todo */
+    background-image: linear-gradient(rgb(255, 192, 203, 0.8), rgba(213, 138, 219, 0.8));
+    border: 8px outset rgba(214, 123, 207, 0.8);
+    border-top: 20px outset rgba(214, 123, 207, 0.8);
+    padding: 10px;
+    border-radius: 0px 10px 10px 0px ;
+    height: 500px;
+}
+
+
+#MenuLobby {
+    position: fixed;
+    top: 90px;
+    left: 0px;
+    width: 1px; /* Ancho inicial pequeño (solo el icono o borde) */
+    height: 500px;
+    background-image: linear-gradient(rgb(255, 192, 203, 0.8), rgba(213, 138, 219, 0.8));
+    border: 8px outset rgba(214, 123, 207, 0.8);
+    border-top: 8px outset rgba(214, 123, 207, 0.8);
+    border-radius: 0px 10px 10px 0px;
+    padding: 10px;
+    z-index: 1000;
+    overflow: hidden;
+    transition: width 0.4s ease;
+    white-space: nowrap;
+    
+    /* Esta es la clave para que se deslice suavemente */
+    transition: width 0.4s ease; 
+    overflow: hidden; /* Oculta el texto cuando el menú es estrecho */
+}
+
+/* Cuando pasas el mouse, el contenedor se expande */
+#MenuLobby:hover {
+    width: 200px; /* El ancho al que quieres que llegue */
+}
+
+/* Ocultamos la lista al principio */
+.listaMenu {
+    display: none;
+    margin-left: 20px;
+}
+
+/* Mostramos la lista al pasar el mouse */
+#MenuLobby:hover .listaMenu {
+    display: block;
+}
+
+#MenuLobby .Texto {
+    display: inline-block; /* Permite que el texto se comporte como una unidad */
+    width: 150px;          /* Ajusta esto al ancho de tu menú expandido */
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+#MenuLobby:hover .Texto {
+    opacity: 1;
+}
+
+#volverInicio {
+    background-image: linear-gradient(rgb(255, 192, 203, 0.8), rgba(213, 138, 219, 0.8));
+    border: 4px outset rgba(214, 123, 207, 0.8);
+    border-top: 4px outset rgba(214, 123, 207, 0.8);
+    width: 500px;
+    height: 30px;
+    border-radius: 10px;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+
+#contenedorProductos {
+    margin-top: 60px;
+    display:table-column;
+    width: 100%;
+    height: fit-content;
+    border-radius: 25px;
+
+}
+
+
+#volverInicio:hover {
+    border: 4px outset rgb(158, 84, 136);
+}
+
+#caracteristicasProductos{
+    width: 500px;
+    background-image: linear-gradient(rgb(255, 192, 203, 0.8), rgba(213, 138, 219, 0.8));
+    border: 4px outset rgba(214, 123, 207, 0.8);
+    border-top: 4px outset rgba(214, 123, 207, 0.8);
+    text-align: center;
+
+}
+
+#menuNavegacion {
+    display: flex;
+
+}
+
+.opcionesNavegacion {
+    font-family: "Yuyu Short", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    gap: 160px;
+    padding: 17px;
+    font-size: 48px;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 192, 203, 0.9);
+    border: 4px solid rgba(214, 123, 207, 0.8);
+    border-radius: 0px 0px 10px 10px;
+    height: 80px;
+    z-index: 1000;
+    width:100%;
+}
+
+a {
+    text-decoration: none; 
+    color: inherit;    
+}
+
+ul {
+    list-style: none; 
+    padding: 0;       
+    margin: 0;
+}
+
+#Logo {
+    display: flex;
+    width: 50px;
+    height: 60px;
+    Padding: 1px;
+    position: absolute;
+  }
+
+  #contenedorCatalogo{
+    display: flex;
+    flex-wrap: wrap;
+    background-image: linear-gradient(rgb(255, 192, 203, 0.8), rgba(213, 138, 219, 0.8));
+    border: 10px outset rgba(214, 123, 207, 0.8);
+    border-top: 40px outset rgba(214, 123, 207, 0.8);
+    height: fit-content;
+    margin: 30px auto;
+    width: 95%;
+    max-width: 1442px;
+    border-radius: 10px;
+    
+  }
+
+
+  #tituloCatalogo {
+    background-color: rgb(255, 192, 203, 0.8);
+    border: 10px outset rgba(214, 123, 207, 0.8);
+    border-top: 40px outset rgba(214, 123, 207, 0.8);
+    margin: 30px auto;
+    padding: 20px;
+    width: 95%;
+    max-width: 1200px;
+    text-align: center;
+    border-radius: 10px;
+  }
+
+  .titulosGrandes{
+    font-size: 128px;
+  }
+
+
+  #Copyright {
+    font-family: "Press Start 2P", system-ui;
+  }
+
+
+  #contenedorFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgb(255, 192, 203, 0.8), rgba(213, 138, 219, 0.8));
+    border: 10px outset rgba(214, 123, 207, 0.8);
+    border-top: 10px outset rgba(214, 123, 207, 0.8);
+    width: 100%;
+    padding: 20px;
+    border-radius: 15px 15px 0px 0px;
+    gap: 50px;
+    margin-top: auto;
+  }
+
+  .giFooter {
+    width: 50px;
+  }
+
+    #contenedorPlantilla {
+        margin-left: -32px;
+        width:  60%;
+        height: 900px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px;
+    }
+    #contenedorImagenes {
+        margin: 20px;
+        background-image: linear-gradient(rgb(255, 192, 203, 0.8), rgba(213, 138, 219, 0.8));
+        border: 5px outset rgba(214, 123, 207, 0.8);
+        border-top: 15px outset rgba(214, 123, 207, 0.8);
+        width: 20%;
+        height: 600px;
+        border-radius: 15px;
+        margin-left: -20px;
+    }
+
+
+    #contenedorPrecio {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Esto centra horizontalmente todo lo que esté dentro */
+        justify-content: flex-start;
+        margin: 20px;
+        background-image: linear-gradient(rgb(255, 192, 203, 0.8), rgba(213, 138, 219, 0.8));
+        border: 5px outset rgba(214, 123, 207, 0.8);
+        border-top: 15px outset rgba(214, 123, 207, 0.8); 
+        width: 80%;
+        height: 600px;
+        border-radius: 15px;
+        margin-left: -300px;
+        margin-top: -80px;
+    }
+
+    .precio {
+        padding: 20px;
+        font-size: 64px;
+        margin-bottom: 310px; /* Reduje el margen para que el botón no quede tan abajo */
+        margin-top: 20px;
+    }
+
+    #botonPago {
+    display: flex;
+    justify-content: center; /* Centra el botón dentro de su propia caja */
+    width: 100%;             /* Asegura que el contenedor del botón ocupe todo el ancho */
+    }
+
+    .botonEstilizado {
+        font-size: 64px;
+        background-image: linear-gradient(rgba(240, 130, 221, 0.9), rgba(213, 138, 219, 0.9));
+        height: 100px;
+        border-radius: 25px;
+        width: 220px;              /* Cambiado de 150% a 90% para que quepa dentro */
+        font-size: 48px;
+        max-width: 400px;        /* Evita que sea gigante en pantallas grandes */
+        cursor: pointer;
+        border: 3px outset #d97de2;
+        display: flex;           /* Ayuda a centrar el texto dentro del botón */
+        align-items: center;
+        justify-content: center;
+    }
+
+    #botonPago:hover .botonEstilizado {
+        background-image: linear-gradient(rgba(170, 107, 160, 0.9), rgba(213, 138, 219, 0.9));
+        border: 4px outset rgb(158, 84, 136);
+    }
+#contenedorContacto {
+    display: flex;
+    flex-direction: column; /* IMPORTANTE: Esto apila el título arriba y la caja abajo */
+    align-items: flex-start; /* Alinea todo al lado izquierdo */
+    background-image: linear-gradient(rgb(255, 192, 203, 0.8), rgba(213, 138, 219, 0.8));
+    border: 10px outset rgba(214, 123, 207, 0.8);
+    border-top: 40px outset rgba(214, 123, 207, 0.8);
+    padding: 20px;
+    margin: 70px 30px 30px 30px;
+    width: 55%;
+    height: auto; /* Cambiado de 750px a auto para que no sobre espacio */
+    border-radius: 15px;
+}
+
+.tituloContacto {
+    text-align: center;
+    font-size: 128px;
+    width: 100%;
+}
+
+.cajaContacto {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;    /* Pone el logo y el número en fila */
+    align-items: center;    /* Los alinea al centro verticalmente */
+    justify-content: center; /* LOS PEGA A LA IZQUIERDA */
+    gap: 20px;
+    width: 100%;
+}
+
+.ImgContacto {
+    margin-top: 0;          /* Eliminado el margen que lo empujaba abajo */
+    width: 300px;           /* Reducido para que sea proporcional */
+    height: auto;
+    margin-left: -100px;
+}
+
+.numeroTelefono {
+    font-size: 140px;        /* Reducido para que quepa bien al lado del logo */
+}
+
+#contenedorPlantilla {
+
+}
+/* 1. Ajuste del contenedor padre para habilitar el scroll snap */
+#contenedorImagenes {
+    align-items: center;
+    display: flex;                /* Alinea las imágenes en fila */
+    overflow-x: auto;             /* Permite el desplazamiento horizontal */
+    scroll-snap-type: x mandatory;/* Fuerza que se "pegue" a cada imagen */
+    width: 60%;
+    height: 700px;                /* Mantén tu altura original */
+    border-radius: 15px;
+    margin-top: -80px;
+    margin-left: 100px;
+    /* Ocultar barra de scroll para un look más limpio */
+    scrollbar-width: none;        
+}
+
+#contenedorImagenes::-webkit-scrollbar {
+    display: none;                /* Oculta scroll en Chrome/Safari */
+}
+
+/* 2. Ajuste de cada imagen/video */
+.itemCarrusel {
+    flex: 0 0 100%;               /* Cada imagen ocupa el 100% del ancho del contenedor */
+    height: 100%;                 /* Llena la altura definida */
+    object-fit: cover;            /* Asegura que la imagen llene el espacio sin deformarse */
+    scroll-snap-align: start;     /* El punto de "anclaje" es el inicio de la imagen */
+    
+}
+
+
+.flecha {
+    position: absolute;
+    top: 48%;
+    background: rgba(221, 109, 193, 0.5);
+    border: none;
+    padding: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 15px;
+}
+.flecha-izq { left: 490px; }
+.flecha-der { right: 735px; }
+
+
+/* MedidasResponsivas */
+
+@media (max-width: 600px) {
+
+    /* Ajustes previos de productos */
+    #Productos {
+        display: flex;
+        flex-direction: row;        /* Permite colocar elementos lado a lado */
+        flex-wrap: wrap;            /* Permite que salten a la siguiente fila */
+        justify-content: space-around; /* Distribuye el espacio entre productos */
+        align-items: center;
+        padding: 10px;
+        border-top: 20px outset rgba(214, 123, 207, 0.8);
+    }
+    
+    .productoCuadro {
+        width: 45% !important;      /* Un poco menos del 50% para que entren dos en la fila */
+        margin: 5px !important;     /* Margen pequeño para que no ocupen demasiado espacio */
+        padding: 5px !important;
+    }
+    
+    .imagenesProductos {
+        
+        height: 150px !important;    /* Tamaño ajustado para móvil */
+        width: 150px !important;
+        object-fit: cover;
+    }
+
+    /* --- AJUSTES DE FUENTES PARA CELULARES --- */
+    
+    /* Achica el título principal de la marca */
+    .titulosGrandes {
+        font-size: 48px !important;
+    }
+
+    /* Achica el título del catálogo */
+    .tituloCatalogo {
+        font-size: 32px !important; /* Mantenemos el tamaño pequeño */
+        margin-bottom: 20px;        /* Espacio entre el título y los productos */
+    }
+
+    /* Achica el texto de bienvenida */
+    .Texto {
+        font-size: 20px !important;
+    }
+
+    /* Achica el nombre de los productos */
+    .nombreProducto {
+        font-family:cursive;
+        font-size: 32px !important;
+        margin-top: 5px;
+    }
+
+    /* Achica las opciones del menú de navegación */
+    .opcionesNavegacion {
+        font-size: 29px !important;
+        gap: 10px;
+     }
+    #Boton1, #Boton2, #Boton3, #Boton4, #Boton5, #Boton6 {
+        display: none !important;
+
+    }
+
+    #Marca {
+        padding: 20px 10px; /* Reducimos el relleno interno significativamente */
+        margin: 10px 0;    /* Reducimos el margen externo para que no ocupe tanto espacio */
+        border-top-width: 20px; /* Reducimos el grosor del borde superior decorativo */
+    }
+
+    /* Opcional: Asegurarnos de que el texto no genere espacio extra innecesario */
+    #Marca .Texto {
+        margin: 0;
+    }
+    header {
+        height: 60px; /* Reducimos un poco la altura del header */
+        justify-content: center; /* Alineamos elementos al inicio */
+        padding: 0 10px;
+    }
+
+    /* Ajuste del contenedor del Logo */
+    #Logo {
+        position: static; /* Cambiamos de absolute a static para que fluya con el header */
+        width: 40px;      /* Tamaño más pequeño para celular */
+        height: 50px;
+        margin-right: 10px;
+    }
+
+    /* Ajuste de la imagen dentro del Logo */
+    #Logo img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    /* Ajuste del menú para que no se desborde al reducir el header */
+    #menuNavegacion {
+        font-size: 14px;
+    }
+    #contenedorCatalogo, #tituloCatalogo {
+        width: 95% !important;
+        margin: 10px auto !important;
+        padding: 10px !important;
+        
+    }
+    
+    .tituloCatalogo {
+        font-size: 200px;
+    }
+    
+    /* Asegura que el contenedor principal (#Contenedor) no se desborde */
+    #Contenedor {
+        width: 100% !important;
+        padding: 0 5px;
+    }
+    #contenedorFooter {
+        flex-direction: row; /* Apila los elementos verticalmente en móvil[cite: 4, 7] */
+        gap: 15px;              /* Reduce el espacio entre elementos */
+        padding: 15px;
+        border: 5px;
+    }
+    #Copyright {
+        font-size: 10px;
+    }
+
+    .giFooter {
+        width: 25px;
+    }
+
+    #contenedorPlantilla {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px; /* Cambiado de -50px para evitar que se corte */
+        height: auto;     /* Permite que crezca según el contenido */
+        margin-left: 35px;
+    }
+
+    #contenedorImagenes {
+        width: 85%;       /* Más ajustado a la pantalla móvil */
+        height: 450px;    /* Altura más coherente para celular */
+        margin: 10px auto;
+        margin-right: 42px;
+    }
+
+    #contenedorPrecio {
+        width: 85%;
+        height: fit-content;     /* Deja que el contenido dicte la altura */
+        padding-bottom: 20px;
+        margin-right: 42px;
+        margin-top: 5px;
+        margin-left: 20px;
+    }
+
+    .precio {
+        margin-bottom: 20px; /* Quitamos el 310px que empujaba todo fuera */
+        font-size: 32px;
+    }
+
+    .botonEstilizado {
+        width: 200px;
+        font-size: 18px;
+        height: 60px;
+    }
+
+    /* Ajuste de Flechas para que no floten fuera de lugar */
+    .flecha {
+        position: static !important; /* Las saca del flujo absolute */
+        padding: 10px;
+        font-size: 20px;
+    }
+    .itemCarrusel {
+        position: static !important;
+        width: 200px;
+        height: 450px;
+    }
+
+    #contenedorContacto {
+        width: 85% !important; /* Aprovecha mejor el ancho de la pantalla móvil */
+        padding: 20px 10px !important;
+        margin-top: 50px !important;
+    }
+
+    .tituloContacto {
+        font-size: 64px !important; /* Reduce el tamaño para que no se desborde */
+        margin-bottom: 20px !important;
+    }
+
+    .cajaContacto {
+        width: 80%;
+        flex-direction: flex !important; /* Pone el logo arriba y el número abajo en móviles */
+        gap: 10px !important;
+        justify-content: center;
+        align-items: center;
+        margin-left: 60px;
+    }
+
+    .numeroTelefono {
+        font-size: 50px !important; /* Ajustado para que quepa en una línea */
+        text-align: center;
+    }
+
+    .ImgContacto {
+        width: 100px !important; /* Tamaño proporcional para móviles */
+        justify-content: center;
+        }
+
+   .botonEstilizado {
+        width: 200px;
+        font-size: 24px;
+        height: 50px;
+    }
+
+    .flecha, .flecha-izq, .flecha-der {
+        display: none !important; /* Esto oculta las flechas completamente en móviles */
+    }
+}
+
+
+
+/* MedidasResponsivas */
