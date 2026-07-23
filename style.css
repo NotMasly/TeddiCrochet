@@ -1052,6 +1052,10 @@ ul {
         width: 25px;
         margin: 0 auto;
     }
+
+    .flecha, .flecha-izq, .flecha-der {
+        display: none !important; /* Esto oculta las flechas completamente en móviles */
+    }
 }
 
 
