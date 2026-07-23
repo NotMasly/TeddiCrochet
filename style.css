@@ -132,7 +132,7 @@ body {
     padding: 5px;
     position: absolute;
     top: 110px;
-    right: 148px;
+    right: 50px;
 }
 
 #Boton2 {
@@ -141,7 +141,7 @@ body {
     padding: 5px;
     position: absolute;
     top: 490px;
-    right: 148px;
+    right: 50px;
 }
 #Boton3 {
     display: flex;       
@@ -149,7 +149,7 @@ body {
     padding: 5px;
     position: absolute;
     top: 111px;
-    right: 460px;
+    right: 260px;
 }
 #Boton4 {
     display: flex;       
@@ -157,7 +157,7 @@ body {
     padding: 5px;
     position: absolute;
     top: 405px;
-    right: 340px;
+    right: 135px;
 }
 #Boton5 {
     display: flex;       
@@ -481,8 +481,15 @@ ul {
     .precio {
         padding: 20px;
         font-size: 64px;
-        margin-bottom: 310px; /* Reduje el margen para que el botón no quede tan abajo */
+        margin-bottom: 0px; /* Reduje el margen para que el botón no quede tan abajo */
         margin-top: 20px;
+    }
+
+    .descripcion {
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 24px;
+        margin-bottom: 10px;
     }
 
     #botonPago {
@@ -585,7 +592,7 @@ ul {
 
 .flecha {
     position: absolute;
-    top: 48%;
+    top: 52%;
     background: rgba(221, 109, 193, 0.5);
     border: none;
     padding: 20px;
@@ -594,8 +601,8 @@ ul {
     z-index: 10;
     border-radius: 15px;
 }
-.flecha-izq { left: 490px; }
-.flecha-der { right: 735px; }
+.flecha-izq { left: 450px; }
+.flecha-der { right: 660px; }
 
 
 /* MedidasResponsivas */
