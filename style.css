@@ -87,7 +87,13 @@ body {
     padding: 10px;
     align-items: center;
 
+}
 
+#grillaProductos {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: center;
 }
 
 .contenedorGrilla {
@@ -102,7 +108,7 @@ body {
 }
 
 .imagenesProductos {
-    height: 250px;
+    height: 190px;
     border-radius: 20px;
 }
 
@@ -349,7 +355,7 @@ body {
     font-family: "Yuyu Short", sans-serif;
     display: flex;
     justify-content: space-between;
-    gap: 160px;
+    gap: 170px;
     padding: 17px;
     font-size: 48px;
     text-decoration: none;
@@ -388,7 +394,7 @@ ul {
 
   #contenedorCatalogo{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     background-image: linear-gradient(rgb(255, 192, 203, 0.8), rgba(213, 138, 219, 0.8));
     border: 10px outset rgba(214, 123, 207, 0.8);
     border-top: 40px outset rgba(214, 123, 207, 0.8);
@@ -397,9 +403,19 @@ ul {
     width: 95%;
     max-width: 1442px;
     border-radius: 10px;
+    justify-content: center;
     
   }
 
+  .tituloColeccion {
+    width: 100% !important;
+    display: block !important;
+    text-align: center !important;
+    margin-top: 10px;
+    margin-bottom: -10px;
+    font-size: 32px;
+  }
+  
 
   #tituloCatalogo {
     background-color: rgb(255, 192, 203, 0.8);
@@ -463,6 +479,7 @@ ul {
 
 
     #contenedorPrecio {
+        font-family: 'Courier New', Courier, monospace;
         display: flex;
         flex-direction: column;
         align-items: center; /* Esto centra horizontalmente todo lo que esté dentro */
@@ -479,6 +496,7 @@ ul {
     }
 
     .precio {
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
         padding: 20px;
         font-size: 64px;
         margin-bottom: 0px; /* Reduje el margen para que el botón no quede tan abajo */
@@ -486,9 +504,10 @@ ul {
     }
 
     .descripcion {
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
         margin-left: 10px;
         margin-right: 10px;
-        font-size: 24px;
+        font-size: 16px;
         margin-bottom: 10px;
     }
 
@@ -621,6 +640,7 @@ ul {
     }
     
     .productoCuadro {
+        margin: 50px;
         width: 45% !important;      /* Un poco menos del 50% para que entren dos en la fila */
         margin: 5px !important;     /* Margen pequeño para que no ocupen demasiado espacio */
         padding: 5px !important;
@@ -628,8 +648,8 @@ ul {
     
     .imagenesProductos {
         
-        height: 150px !important;    /* Tamaño ajustado para móvil */
-        width: 150px !important;
+        height: 130px !important;    /* Tamaño ajustado para móvil */
+        width: 120px !important;
         object-fit: cover;
     }
 
@@ -1051,10 +1071,6 @@ ul {
     .giFooter {
         width: 25px;
         margin: 0 auto;
-    }
-
-    .flecha, .flecha-izq, .flecha-der {
-        display: none !important; /* Esto oculta las flechas completamente en móviles */
     }
 }
 
