@@ -74,10 +74,21 @@ body {
     border: 10px outset rgba(214, 123, 207, 0.8);
     border-top: 40px outset rgba(214, 123, 207, 0.8);
     width: 100%;
+    height: fit-content;
     margin-top: 30px;
     padding: 20px;
     border-radius: 10px;
 }
+
+.contenedorGrilla {
+    display: flex;
+    flex-wrap: wrap;        /* Permite que los productos pasen a la siguiente fila */
+    justify-content: center; /* Centra las tarjetas de forma fluida */
+    gap: 15px;              /* Espacio uniforme entre filas y columnas */
+    width: 100%;
+    height: fit-content;
+}
+
 
 .productoCuadro {
     margin-top: 10px;
@@ -91,17 +102,13 @@ body {
 
 #grillaProductos {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap;        /* Hace que los productos bajen a la siguiente fila si no caben */
     padding: 20px;
     justify-content: center;
-}
-
-.contenedorGrilla {
-    display: flex;
-    flex-wrap: wrap;       /* Permite que los productos pasen a la siguiente fila */
-    justify-content: start; /* Centra los productos en la fila */
+    gap: 20px;              /* Espacio ordenado entre cada tarjeta de producto */
     width: 100%;
 }
+
 
 #contenedorProductos {
     width: 95%;
@@ -459,7 +466,7 @@ ul {
 
     #contenedorPlantilla {
         margin-left: -32px;
-        width:  60%;
+        width:  59%;
         height: 900px;
         display: flex;
         align-items: center;
@@ -474,7 +481,7 @@ ul {
         width: 20%;
         height: 600px;
         border-radius: 15px;
-        margin-left: -20px;
+        margin-left: -10px;
     }
 
 
@@ -491,7 +498,7 @@ ul {
         width: 80%;
         height: 600px;
         border-radius: 15px;
-        margin-left: -300px;
+        margin-left: -280px;
         margin-top: -80px;
     }
 
@@ -620,8 +627,8 @@ ul {
     z-index: 10;
     border-radius: 15px;
 }
-.flecha-izq { left: 450px; }
-.flecha-der { right: 660px; }
+.flecha-izq { left: 430px; }
+.flecha-der { right: 685px; }
 
 
 /* MedidasResponsivas */
@@ -637,20 +644,26 @@ ul {
         align-items: center;
         padding: 10px;
         border-top: 20px outset rgba(214, 123, 207, 0.8);
+        height: auto !important;
+        padding-bottom: 40px !important;
     }
     
     .productoCuadro {
-        margin: 50px;
-        width: 45% !important;      /* Un poco menos del 50% para que entren dos en la fila */
-        margin: 5px !important;     /* Margen pequeño para que no ocupen demasiado espacio */
-        padding: 5px !important;
+        width: 22% !important;     /* ANCHO REDUCIDO: Esto permite que entren hasta 4 por fila en celular */
+        min-width: 70px !important; /* Evita que se encojan demasiado */
+        margin: 2px auto !important;     
+        padding: 2px !important;
     }
     
     .imagenesProductos {
-        
-        height: 130px !important;    /* Tamaño ajustado para móvil */
-        width: 120px !important;
-        object-fit: cover;
+        height: 105px !important;    /* Achicamos la imagen para que quepan holgadamente */
+        width: 105px !important;     
+        object-type: contain;
+    }
+
+    .nombreProducto {
+        font-size: 10px !important; /* Texto más pequeño acorde a los 4 por fila */
+        margin-top: 2px;
     }
 
     /* --- AJUSTES DE FUENTES PARA CELULARES --- */
@@ -673,7 +686,6 @@ ul {
 
     /* Achica el nombre de los productos */
     .nombreProducto {
-        font-family:cursive;
         font-size: 32px !important;
         margin-top: 5px;
     }
