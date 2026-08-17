@@ -26,31 +26,35 @@
 
 <!--Header Navegación-->
 <section id="contenedorPlantilla">
-    <button class="flecha flecha-izq" onclick="mover(-1)">&#10094;</button>
-    <section id="contenedorImagenes">
-        <img src="" alt="Foto 1" class="itemCarrusel">
-        <img src="" alt="Foto 2" class="itemCarrusel">
-        <video controls class="itemCarrusel">
+    <section class="carrusel-wrapper" style="display: flex; align-items: center; width: 100%;">
+        <button class="flecha flecha-izq" onclick="mover(-1)">&#10094;</button>
+        <section id="contenedorImagenes">
+            <img src="../Img/Productos/" alt="Foto 1" class="itemCarrusel">
+            <img src="../Img/Productos/" alt="Foto 2" class="itemCarrusel">
+        <!--<video controls class="itemCarrusel">
             <source src="/Img/VideoProducto.mp4" type="video/mp4">
-        </video>
-    <button class="flecha flecha-der" onclick="mover(1)">&#10095;</button>
+        </video> -->
+        </section>
+        <button class="flecha flecha-der" onclick="mover(1)">&#10095;</button>
     </section>
-
+    
     <section id="contenedorPrecio">
-        <h1 class="precio">$50000</h1>
-
+        <h1 class="precio">Inserte Precio</h1>
+        <h2 class="descripcion">Inserte descripcion </h2>
+        <h2 class="descripcion">...</h2>
+        <h2 class="descripcion">...</h2>
 
         <section id="botonPago">
-            <a href="contacto.html"><button class="botonEstilizado">Haz tu pedido</button></a>
+            <a href="../contacto.html"><button class="botonEstilizado">Haz tu pedido</button></a>
         </section>
     </section>
 </section>
 
 
 
-<script src="/scroll.js"></script>
+<script src="../scroll.js"></script>
 <footer id="contenedorFooter">
-    <img class="giFooter" src="/Img/Pika.gif"><h3 id="Copyright">Hecho por Masly® 2026</h3>
+    <img class="giFooter" src="../Img/Pika.gif"><h3 id="Copyright">Hecho por Masly® 2026</h3>
 </footer>
 </body>
 </html>
