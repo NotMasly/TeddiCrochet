@@ -618,6 +618,60 @@ ul {
     
 }
 
+.popup {
+    display: flex;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.imagenPopUp {
+    width: 200px;             /* Asegura un tamaño adecuado para la imagen del producto */
+    height: auto;
+    margin: 10px 0;
+    border-radius: 15px;
+}
+
+.popup-contenido {
+    background: rgba(221, 109, 193, 0.9);
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    border: 5px solid #d97de2;
+    width: 90%;
+    max-width: 350px;
+    display: flex;        /* Activamos flexbox dentro del recuadro */
+    flex-direction: column; /* Ponemos todo uno debajo del otro */
+    align-items: center;    /* Centramos todo horizontalmente */
+    gap: 15px;             /* ESTO ES LO IMPORTANTE: crea espacio entre los elementos */
+    font-size: 48px;       /* Ajusté a 24px porque 48px era demasiado grande */
+}
+
+.boton-ir {
+    border: 10px rgba(48, 7, 37, 0.9);
+    background-color: #e282da;
+    padding: 10px;
+    border-radius: 20px;
+}
+.boton-ir:hover {
+    background-color: #d97de2; /* Cambia a un tono rosado/lila llamativo */
+    color: #ffffff;             /* Asegura que el texto sea blanco y resalte */
+    border-color: #ffffff;      /* Cambia el borde si lo deseas */
+    transform: scale(1.05);     /* Hace que crezca ligeramente de tamaño de forma suave */
+    transition: all 0.3s ease;  /* Hace que la transición sea fluida y no brusca */
+}
+
+.cerrar-popup {
+    float: right;
+    cursor: pointer;
+    font-size: 20px;
+}
 
 .flecha {
     position: absolute;
